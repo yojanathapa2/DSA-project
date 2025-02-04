@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Chewy&display=swap");
 
 * {
@@ -102,7 +102,7 @@ body {
 }
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
+/* .dropdown:hover .dropdown-content {
   display: block;
 }
 
@@ -181,4 +181,176 @@ body {
   height: 20px;
   width: 598px;
   margin: auto;
+}  */
+
+@import url("https://fonts.googleapis.com/css2?family=Nosifer&family=UnifrakturMaguntia&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-image: url("../img/redbg.jpg"); /* Use a dark, foggy forest or haunted house */
+  background-size: cover;
+  background-position: center;
+  background-color: black;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+/* Title with Horror Font */
+.title {
+  position: absolute;
+  left: 15px;
+  top: 20px;
+  color: #8b0000; /* Blood Red */
+  font-family: "Nosifer", cursive; /* Dripping Blood Font */
+  font-size: larger;
+  font-weight: 400;
+  text-shadow: 2px 2px 5px black;
+}
+
+/* Navigation Buttons */
+.nav-item,
+.nav-info {
+  padding: 7px 10px;
+  margin-top: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+  background-color: #300000; /* Dark Red */
+  color: white;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-weight: 500;
+  font-family: "UnifrakturMaguntia", serif; /* Gothic Style */
+  font-size: 1rem;
+  border-style: none;
+  box-shadow: 0 0 5px rgba(255, 0, 0, 0.6);
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-item:hover,
+.nav-info:hover {
+  background-color: #8b0000;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 1);
+  transform: scale(1.05);
+}
+
+/* Dropdown Menu */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #200000;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  min-width: 130px;
+  box-shadow: 0px 8px 16px rgba(255, 0, 0, 0.4);
+  z-index: 1;
+  left: -2px;
+  top: 37px;
+  line-height: 22px;
+}
+
+.dropdown-content button {
+  padding: 10px;
+  width: 100%;
+  background-color: #300000;
+  color: white;
+  display: block;
+  border: none;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-weight: 500;
+  font-family: "UnifrakturMaguntia", serif;
+  font-size: 1rem;
+}
+
+.dropdown-content button:hover {
+  background-color: #8b0000;
+  color: #fff;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Main Container */
+.container {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: relative;
+  height: 85vh;
+  width: 90%;
+  margin: 20px auto;
+  border: 3px solid #8b0000;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+}
+
+/* Character */
+.character {
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  bottom: 0px;
+  filter: brightness(0.6);
+}
+
+/* Creepy Tree */
+.tree {
+  position: absolute;
+  left: 780px;
+  bottom: -15px;
+  filter: contrast(1.2) brightness(0.5);
+}
+
+/* Blocks */
+.block,
+.block2 {
+  width: 48px;
+  position: absolute;
+  transition: 0.2s all ease;
+}
+
+/* Top Layer Block */
+.block {
+  background-color: rgb(61, 20, 20);
+  left: 60px;
+  border: 1px solid black;
+  bottom: 20px;
+}
+
+/* Bottom Layer Block */
+.block2 {
+  background-color: #381313;
+  bottom: 0;
+  left: 60px;
+  border: 1px solid black;
+}
+
+/* Glowing Block ID */
+.block_id {
+  position: absolute;
+  color: white;
+  text-shadow: 0 0 5px red;
+  margin-top: -20px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Score Counter */
+#count {
+  height: 20px;
+  width: 598px;
+  margin: auto;
+  color: white;
+  font-family: "Nosifer", cursive;
+  text-align: center;
 }

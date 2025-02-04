@@ -8,7 +8,7 @@ let popUps = [];
 
 function mazeGenerator() {
   cellElements[current.r * ncols + current.c].style.background =
-    "hsl(25,90%,80%)";
+    "hsl(0, 100.00%, 18.40%)";
   if (!current.visited) {
     current.visited = true;
     stack.push(current);
@@ -51,7 +51,7 @@ function mazeGenerator() {
     clearInterval(drawLoop);
     play = true;
     cellElements[current.r * ncols + current.c].style.background =
-      "hsl(62, 83.60%, 71.40%)";
+      "hsl(0, 100%, 5%)";
     cellElements[goal.r * ncols + goal.c].innerHTML = sortingHat;
     cellElements[current.r * ncols + current.c].innerHTML = hackee;
   }
