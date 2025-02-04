@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Chewy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nosifer&family=UnifrakturMaguntia&display=swap");
 
 * {
   margin: 0;
@@ -13,11 +12,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  background-image: url("../img/jungle.jpg");
+  
+  background-image: url("../img/horror-bg.jpg"); /* Use a dark, foggy forest or haunted house */
   background-size: cover;
+  background-position: center;
+  background-color: black;
 }
 
+/* Maze Grid */
 .row {
   display: flex;
   justify-content: center;
@@ -27,24 +29,26 @@ body {
 .cell {
   height: 40px;
   width: 40px;
-  border-bottom: 4px solid hsl(30, 80%, 35%);
-  border-right: 4px solid hsl(20, 80%, 40%);
+  border-bottom: 4px solid hsl(0, 90%, 25%); /* Dark blood red */
+  border-right: 4px solid hsl(0, 80%, 30%); /* Dark red */
 
   position: relative; /* Fixing Corner Border */
-
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: rgba(50, 0, 0, 0.5); /* Dark red fog effect */
 }
 
+/* First row/column for proper borders */
 .first-col {
-  border-left: 4px solid hsl(20, 80%, 40%);
+  border-left: 4px solid hsl(0, 80%, 30%);
 }
 
 .first-row {
-  border-top: 4px solid hsl(30, 80%, 35%);
+  border-top: 4px solid hsl(0, 90%, 25%);
 }
 
+/* Blood splatter effect in the bottom right */
 .bottomRightCorner::after {
   position: absolute;
   content: "";
@@ -52,61 +56,67 @@ body {
   bottom: 0;
   width: 4px;
   height: 4px;
-  background: hsl(30, 80%, 35%);
+  background: hsl(0, 90%, 25%);
 }
 
-.top-margin {
-  margin-top: 10px;
-}
-
+/* Navigation Bar */
 .navbar {
   display: flex;
   justify-content: center;
-  color: hsl(20, 80%, 40%);
+  color: hsl(0, 90%, 40%);
   margin: -29px 10px 20px 10px;
-  font-family: "Frank Ruhl Libre", serif;
+  font-family: "UnifrakturMaguntia", serif; /* Gothic Style */
   font-size: 1rem;
   font-weight: 500;
 }
 
+/* Title */
 .title {
   position: absolute;
   left: 25px;
   top: 20px;
-  color: hsl(23, 72%, 57%);
-  font-family: "Chewy", cursive;
+  color: #8b0000; /* Deep blood red */
+  font-family: "Nosifer", cursive; /* Dripping blood font */
   font-size: 28px;
   font-weight: 400;
+  text-shadow: 2px 2px 10px black;
 }
 
-.generate-maze {
+/* Maze Buttons */
+.generate-maze,
+.visualize-maze {
   padding: 10px;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin: 10px;
   cursor: pointer;
-  background-color: hsl(31, 90%, 72%);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: hsl(16, 81%, 14%);
+  font-family: "UnifrakturMaguntia", serif;
+  font-size: 1rem;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+  transition: all 0.3s ease-in-out;
 }
 
-.generate-maze:hover,
-.checkbox:hover {
-  border: 1px solid #013236;
-}
-
-.visualize-maze {
-  background-color: hsl(20, 50%, 31%);
-  border-top-left-radius: 20px;
-  padding: 10px;
+.generate-maze {
+  background-color: hsl(0, 80%, 30%);
   color: white;
 }
 
+.visualize-maze {
+  background-color: hsl(0, 50%, 20%);
+  color: #ffeded;
+}
+
+.generate-maze:hover,
+.visualize-maze:hover {
+  background-color: hsl(0, 90%, 40%);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 1);
+  transform: scale(1.05);
+}
+
+/* Checkbox */
 .checkbox {
-  background-color: rgb(248, 253, 187);
+  background-color: #300000;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   padding: 2px;
@@ -115,21 +125,30 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid hsl(0, 90%, 40%);
 }
 
+/* Floating Blood Splatter Animation */
 .heart {
   position: absolute;
-  animation: fly 3s linear forwards;
+  animation: bloodSplatter 3s linear forwards;
   color: #e7273f;
   z-index: 1;
+  font-size: 1.5rem;
 }
 
-@keyframes fly {
-  to {
-    transform: translateY(-50px);
+@keyframes bloodSplatter {
+  0% {
+    transform: scale(0.8);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2) translateY(-50px);
+    opacity: 0;
   }
 }
 
+/* Dropdown Menu */
 .dropdown {
   position: relative;
   display: block;
@@ -138,13 +157,13 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: rgb(248, 253, 187);
-  color: #6a9653;
+  background-color: #200000;
+  color: #ffeded;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
   min-width: 440px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px rgba(255, 0, 0, 0.4);
   z-index: 1;
   left: -2px;
   top: 40px;
