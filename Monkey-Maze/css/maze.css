@@ -12,8 +12,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
-  background-image: url("../img/horror-bg.jpg"); /* Use a dark, foggy forest or haunted house */
+
+  background-image: url("../img/redbg.jpg"); /* Use a dark, foggy forest or haunted house */
   background-size: cover;
   background-position: center;
   background-color: black;
