@@ -45,7 +45,7 @@ body {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   font-weight: 500;
-  font-family: "UnifrakturMaguntia", serif; /* Gothic Style */
+  font-family: "Jolly Lodger", cursive; /* Gothic Style */
   font-size: 1rem;
   border-style: none;
   box-shadow: 0 0 5px rgba(255, 0, 0, 0.6);
@@ -94,7 +94,7 @@ body {
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
   font-weight: 500;
-  font-family: "UnifrakturMaguntia", serif;
+  font-family: "Jolly Lodger", cursive;
   font-size: 1rem;
 }
 
