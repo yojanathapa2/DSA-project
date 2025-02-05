@@ -155,7 +155,7 @@ body {
   display: block;
 } */
 
-@import url("https://fonts.googleapis.com/css2?family=Nosifer&family=UnifrakturMaguntia&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Nosifer&display=swap");
 
 * {
   margin: 0;
@@ -222,7 +222,7 @@ body {
   justify-content: center;
   color: hsl(0, 90%, 40%);
   margin: -29px 10px 20px 10px;
-  font-family: "UnifrakturMaguntia", serif; /* Gothic Style */
+  font-family: "Jolly Lodger", cursive; /* Gothic Style */
   font-size: 1rem;
   font-weight: 500;
 }
@@ -248,8 +248,8 @@ body {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  font-family: "UnifrakturMaguntia", serif;
-  font-size: 1rem;
+  font-family: "Jolly Lodger", cursive;
+  font-size: 1.5rem;
   box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
   transition: all 0.3s ease-in-out;
 }
@@ -324,7 +324,8 @@ body {
   z-index: 1;
   left: -2px;
   top: 40px;
-  padding: 8px 10px;
+  padding: 8px;
+  font-size: 1.25rem;
 }
 
 .dropdown:hover .dropdown-content {
