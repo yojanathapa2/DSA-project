@@ -144,7 +144,8 @@ body {
   height: 65px;
   position: absolute;
   bottom: 0px;
-  filter: brightness(0.6);
+  left:  0px;
+  
 }
 
 /* Creepy Tree */

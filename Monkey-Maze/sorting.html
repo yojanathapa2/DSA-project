@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< Updated upstream
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,52 +9,22 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
     integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA="
     crossorigin="anonymous"
-  />
-  <link rel="stylesheet" href="css/sorting.css" />
-  <title>Sorting Visualizer</title>
-</head>
-<body>
-  <div class="navbar">
-    <h1 class="title">
-      <a href="index.html" style="text-decoration: none; color: #035f50">Hungry Hackee Hunts</a>
-    </h1>
-    <button class="nav-item" id="generate-array" onclick="generate(), generate_idx();">Generate New Array</button>
-=======
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
-      integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA="
-      crossorigin="anonymous"
-    />
-    <!--  HowlerJS -->
+  />  <!--  HowlerJS -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"
       integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <link rel="stylesheet" href="css/sorting.css" />
-    <title>Sorting Visualizer</title>
-  </head>
-  <body>
-    <div class="navbar">
-      <h1 class="title">
-        <a href="index.html" style="text-decoration: none; color: #035f50"
-          >The Zombee Escape</a
-        >
-      </h1>
-      <button
-        class="nav-item"
-        id="generate-array"
-        onclick="generate(), generate_idx();"
-      >
-        Generate New Array
-      </button>
->>>>>>> Stashed changes
+  <link rel="stylesheet" href="css/sorting.css" />
+  <title>Sorting Visualizer</title>
+</head>
+<>
+  <div class="navbar">
+    <h1 class="title">
+      <a href="index.html" style="text-decoration: none; color: #035f50">Hungry Hackee Hunts</a>
+    </h1>
+    <button class="nav-item" id="generate-array" onclick="generate(), generate_idx();">Generate New Array</button>
 
     <div class="nav-item dropdown">
       Sort
@@ -70,7 +39,6 @@
       </div>
     </div>
 
-<<<<<<< Updated upstream
     <div class="nav-item dropdown">
       <i class="fas fa-lightbulb" style="color: rgb(241, 172, 44)"></i>
       Hint to help Hackee get the Walnuts
@@ -80,8 +48,10 @@
         <br />
         <span style="color: green">&nbsp; &nbsp; Blocks must be sorted first!</span>
       </span>
-=======
-    <div class="container">
+    </div>
+  </div>
+
+<div class="container">
       <div class="nav-item info arrayInput">
         Speed:
         <input id="speed" type="range" min="1" max="5" step="1" value="4" />
@@ -103,28 +73,8 @@
       <div class="game">
         <img src="img/both.png" class="character" />
       </div>
->>>>>>> Stashed changes
     </div>
-  </div>
-
-  <div class="container">
-    <div class="nav-item info arrayInput">
-      Speed:
-      <input id="speed" type="range" min="1" max="5" step="1" value="2" />
-    </div>
-    <div id="array"></div>
-    <div id="count"></div>
-    <br />
-    <h2 class="range" style="text-align: center"></h2>
-
-    <div class="tree">
-      <img src="img/tree.png" alt="" width="430px" height="512px" />
-    </div>
-    <div class="game">
-      <img src="img/monkey.png" class="character" />
-    </div>
-  </div>
-
+  </body> 
   <script src="js/sorting.js"></script>
   <script src="js/visualize.js"></script>
   <script src="js/quicksort.js"></script>
@@ -134,5 +84,5 @@
   <script src="js/shellSort.js"></script>
   <script src="js/heapSort.js"></script>
   <script src="js/character.js"></script>
-</body>
+
 </html>
