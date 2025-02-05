@@ -1,5 +1,5 @@
 var moveSound = new Howl({
-  src: ["./sfx/move.mp3"],
+  src: ["./sfx/mov2.mp3"],
   html5: true,
 });
 
@@ -10,7 +10,7 @@ var tada = new Howl({
 });
 
 var wallCrash = new Howl({
-  src: "./sfx/wall_crash.mp3",
+  src: "./sfx/wall_crash2.mp3",
   html5: true,
   volume: 0.1,
 });
