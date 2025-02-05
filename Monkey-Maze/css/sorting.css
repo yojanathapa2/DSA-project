@@ -122,7 +122,7 @@ body {
   position: absolute;
   left: 20px; /* Position to the left */
   top: 20px; /* Adjust top as needed */
-  font-family: "UnifrakturMaguntia", serif;
+  font-family: "Jolly Lodger", cursive;
   font-size: 1rem;
   display: flex;
   align-items: center;
@@ -144,6 +144,7 @@ body {
   height: 65px;
   position: absolute;
   bottom: 0px;
+  left: 2px;
   filter: brightness(0.6);
 }
 

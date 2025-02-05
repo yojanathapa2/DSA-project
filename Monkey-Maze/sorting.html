@@ -1,26 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< Updated upstream
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
-    integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA="
-    crossorigin="anonymous"
-  />
-  <link rel="stylesheet" href="css/sorting.css" />
-  <title>Sorting Visualizer</title>
-</head>
-<body>
-  <div class="navbar">
-    <h1 class="title">
-      <a href="index.html" style="text-decoration: none; color: #035f50">Hungry Hackee Hunts</a>
-    </h1>
-    <button class="nav-item" id="generate-array" onclick="generate(), generate_idx();">Generate New Array</button>
-=======
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -31,13 +10,6 @@
       integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA="
       crossorigin="anonymous"
     />
-    <!--  HowlerJS -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"
-      integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
     <link rel="stylesheet" href="css/sorting.css" />
     <title>Sorting Visualizer</title>
   </head>
@@ -45,7 +17,7 @@
     <div class="navbar">
       <h1 class="title">
         <a href="index.html" style="text-decoration: none; color: #035f50"
-          >The Zombee Escape</a
+          >Hungry Hackee Hunts</a
         >
       </h1>
       <button
@@ -55,36 +27,38 @@
       >
         Generate New Array
       </button>
->>>>>>> Stashed changes
 
-    <div class="nav-item dropdown">
-      Sort
-      <i class="fas fa-caret-down" style="color: rgb(241, 172, 44)"></i>
-      <div class="dropdown-content algoButtons">
-        <button id="bubbleSortButton">Bubble Sort</button>
-        <button id="insertionSortButton">Insertion Sort</button>
-        <button id="selectionSortButton">Selection Sort</button>
-        <button id="shellSortButton">Shell Sort</button>
-        <button id="heapSortButton">Heap Sort</button>
-        <button id="quickSortButton">Quick Sort</button>
+      <div class="nav-item dropdown">
+        Sort
+        <i class="fas fa-caret-down" style="color: rgb(241, 172, 44)"></i>
+        <div class="dropdown-content algoButtons">
+          <button id="bubbleSortButton">Bubble Sort</button>
+          <button id="insertionSortButton">Insertion Sort</button>
+          <button id="selectionSortButton">Selection Sort</button>
+          <button id="shellSortButton">Shell Sort</button>
+          <button id="heapSortButton">Heap Sort</button>
+          <button id="quickSortButton">Quick Sort</button>
+        </div>
+      </div>
+
+      <div class="nav-item dropdown">
+        <i class="fas fa-lightbulb" style="color: rgb(241, 172, 44)"></i>
+        Hint to help Hackee get the Walnuts
+        <span class="nav-info dropdown-content hint" style="top: 25px">
+          <i class="fas fa-arrow-up" style="color: green"></i>
+          Use arrow-up key to make Hackee jump
+          <br />
+          <span style="color: green"
+            >&nbsp; &nbsp; Blocks must be sorted first!</span
+          >
+        </span>
       </div>
     </div>
 
-<<<<<<< Updated upstream
-    <div class="nav-item dropdown">
-      <i class="fas fa-lightbulb" style="color: rgb(241, 172, 44)"></i>
-      Hint to help Hackee get the Walnuts
-      <span class="nav-info dropdown-content hint" style="top: 25px">
-        <i class="fas fa-arrow-up" style="color: green"></i>
-        Use arrow-up key to make Hackee jump
-        <br />
-        <span style="color: green">&nbsp; &nbsp; Blocks must be sorted first!</span>
-      </span>
-=======
     <div class="container">
       <div class="nav-item info arrayInput">
         Speed:
-        <input id="speed" type="range" min="1" max="5" step="1" value="4" />
+        <input id="speed" type="range" min="1" max="5" step="1" value="2" />
       </div>
       <div id="array"></div>
       <div id="count"></div>
@@ -92,47 +66,21 @@
       <h2 class="range" style="text-align: center"></h2>
 
       <div class="tree">
-        <img
-          src="img/tree.png"
-          alt=""
-          width="430px
-        "
-          height="512px"
-        />
+        <img src="img/tree.png" alt="" width="430px" height="512px" />
       </div>
       <div class="game">
         <img src="img/both.png" class="character" />
       </div>
->>>>>>> Stashed changes
     </div>
-  </div>
 
-  <div class="container">
-    <div class="nav-item info arrayInput">
-      Speed:
-      <input id="speed" type="range" min="1" max="5" step="1" value="2" />
-    </div>
-    <div id="array"></div>
-    <div id="count"></div>
-    <br />
-    <h2 class="range" style="text-align: center"></h2>
-
-    <div class="tree">
-      <img src="img/tree.png" alt="" width="430px" height="512px" />
-    </div>
-    <div class="game">
-      <img src="img/monkey.png" class="character" />
-    </div>
-  </div>
-
-  <script src="js/sorting.js"></script>
-  <script src="js/visualize.js"></script>
-  <script src="js/quicksort.js"></script>
-  <script src="js/bubblesort.js"></script>
-  <script src="js/selectionsort.js"></script>
-  <script src="js/insertionSort.js"></script>
-  <script src="js/shellSort.js"></script>
-  <script src="js/heapSort.js"></script>
-  <script src="js/character.js"></script>
-</body>
+    <script src="js/sorting.js"></script>
+    <script src="js/visualize.js"></script>
+    <script src="js/quicksort.js"></script>
+    <script src="js/bubblesort.js"></script>
+    <script src="js/selectionsort.js"></script>
+    <script src="js/insertionSort.js"></script>
+    <script src="js/shellSort.js"></script>
+    <script src="js/heapSort.js"></script>
+    <script src="js/character.js"></script>
+  </body>
 </html>
