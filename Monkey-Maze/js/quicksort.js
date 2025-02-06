@@ -4,12 +4,12 @@ async function partition(l, r, delay) {
   // Storing the value of pivot element
   var pivot = Number(blocks[r].childNodes[0].innerHTML);
   var i = l - 1;
-  blocks[r].style.backgroundColor = "red";
+  blocks[r].style.backgroundColor = "#8B0000";
   document.getElementsByClassName("range")[0].innerText = `[${l},${r}]`;
 
   for (var j = l; j <= r - 1; j++) {
     // change color of blocks to be compared
-    blocks[j].style.backgroundColor = "yellow";
+    blocks[j].style.backgroundColor = "#FFD700";
     // wait for 600 milliseconds
     await new Promise((resolve) =>
       setTimeout(() => {
@@ -27,15 +27,15 @@ async function partition(l, r, delay) {
       blocks[j].style.height = temp1;
       blocks[i].childNodes[0].innerText = blocks[j].childNodes[0].innerText;
       blocks[j].childNodes[0].innerText = temp2;
-      blocks[i].style.backgroundColor = "orange";
-      if (i != j) blocks[j].style.backgroundColor = "pink";
+      blocks[i].style.backgroundColor = "#800080";
+      if (i != j) blocks[j].style.backgroundColor = "#708090";
       // wait for 600 milliseconds
       await new Promise((resolve) =>
         setTimeout(() => {
           resolve();
         }, delay)
       );
-    } else blocks[j].style.backgroundColor = "pink";
+    } else blocks[j].style.backgroundColor = "#708090";
   }
   // Swapping the ith with pivot element
   i++;
@@ -45,8 +45,8 @@ async function partition(l, r, delay) {
   blocks[r].style.height = temp1;
   blocks[i].childNodes[0].innerText = blocks[r].childNodes[0].innerText;
   blocks[r].childNodes[0].innerText = temp2;
-  blocks[r].style.backgroundColor = "pink";
-  blocks[i].style.backgroundColor = "#6b5b95";
+  blocks[r].style.backgroundColor = "#708090";
+  blocks[i].style.backgroundColor = "#2F4F4F";
 
   // To wait for 2100 milliseconds
   await new Promise((resolve) =>
@@ -55,7 +55,7 @@ async function partition(l, r, delay) {
     }, delay * 3)
   );
   document.getElementsByClassName("range")[0].innerText = "";
-  for (var k = 0; k < 15; k++) blocks[k].style.backgroundColor = "green";
+  for (var k = 0; k < 15; k++) blocks[k].style.backgroundColor = "#013220";
   return i;
 }
 

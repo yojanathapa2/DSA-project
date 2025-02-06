@@ -3,15 +3,15 @@ async function SelectionSort(l, r, delay) {
   // Assign 0 to max_idx
   var max_idx = l;
   document.getElementsByClassName("range")[0].innerText = `[${l},${r}]`;
-  for (var i = 14; i > 0 ; i--) {
+  for (var i = 14; i > 0; i--) {
     // Assign i to max_idx
     max_idx = i;
 
     // Provide color to the ith bar
-    blocks[i].style.backgroundColor = "red";
-    for (var j = 0 ; j <= i; j ++) {
+    blocks[i].style.backgroundColor = "#6c0450";
+    for (var j = 0; j <= i; j++) {
       // Provide color to the jth bar
-      blocks[j].style.backgroundColor = "yellow";
+      blocks[j].style.backgroundColor = "#3e0223";
 
       // To pause the execution of code for 300 milliseconds
       await new Promise((resolve) =>
@@ -30,19 +30,21 @@ async function SelectionSort(l, r, delay) {
       if (val1 > val2) {
         if (max_idx !== i) {
           // Provide  color to the (max_idx)th bar
-          blocks[max_idx].style.backgroundColor = " pink";
+          blocks[max_idx].style.backgroundColor = "#9642f8";
         }
         max_idx = j;
       } else {
         // Provide  color to the jth bar
-        blocks[j].style.backgroundColor = " pink";
+        blocks[j].style.backgroundColor = " #9642f8";
       }
-      document.getElementsByClassName("range")[0].innerText = `[${max_idx},${i}]`;
+      document.getElementsByClassName(
+        "range"
+      )[0].innerText = `[${max_idx},${i}]`;
       await new Promise((resolve) =>
-      setTimeout(() => {
-        resolve();
-      }, delay)
-    );
+        setTimeout(() => {
+          resolve();
+        }, delay)
+      );
     }
 
     // To swap ith and (max_idx)th bar
@@ -61,12 +63,12 @@ async function SelectionSort(l, r, delay) {
     );
 
     // Provide color to the (min-idx)th bar
-    blocks[max_idx].style.backgroundColor = "pink";
+    blocks[max_idx].style.backgroundColor = "#a83002";
 
     // Provide color to the ith bar
-    blocks[i].style.backgroundColor = "green";
+    blocks[i].style.backgroundColor = "#4a0232";
   }
-  blocks[i].style.backgroundColor = "green";
+  blocks[i].style.backgroundColor = "#4a0232";
 }
 
 let selectionSortButton = document.getElementById("selectionSortButton");

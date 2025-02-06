@@ -23,21 +23,26 @@ body {
 /* Title with Horror Font */
 .title {
   position: absolute;
-  left: 15px;
-  top: 20px;
+  left: 25px;
+  top: 26px;
   color: #8b0000; /* Blood Red */
   font-family: "Nosifer", cursive; /* Dripping Blood Font */
-  font-size: larger;
-  font-weight: 400;
-  text-shadow: 2px 2px 5px black;
+  font-size: 30px;
+  font-weight: 420;
+  text-shadow: 2px 2px 10px hsl(0, 70%, 8%);
+  transition: all 0.3s ease-in-out;
+}
+
+.title:hover {
+  text-shadow: 2px 2px 10px hsl(57, 97%, 13%);
+  transform: scale(1.05);
 }
 
 /* Navigation Buttons */
 .nav-item,
 .nav-info {
-  padding: 7px 10px;
-  margin-top: 20px;
-  margin-right: 20px;
+  padding: 10px;
+  margin: 10px;
   cursor: pointer;
   background-color: #300000; /* Dark Red */
   color: white;
@@ -68,7 +73,7 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #200000;
+  background-color: transparent;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   min-width: 130px;
@@ -87,7 +92,7 @@ body {
 .dropdown-content button {
   padding: 10px;
   width: 100%;
-  background-color: #300000;
+  background-color: transparent;
   color: white;
   display: block;
   border: none;
@@ -96,6 +101,7 @@ body {
   font-weight: 500;
   font-family: "Jolly Lodger", cursive;
   font-size: 1rem;
+  cursor: pointer;
 }
 
 .dropdown-content button:hover {
@@ -140,8 +146,8 @@ body {
 
 /* Character */
 .character {
-  width: 65px;
-  height: 65px;
+  width: 70px;
+  height: 75px;
   position: absolute;
   bottom: 0px;
   left: 0px;
@@ -150,9 +156,9 @@ body {
 /* Creepy Tree */
 .tree {
   position: absolute;
-  left: 780px;
-  bottom: -15px;
-  filter: contrast(1.2) brightness(0.5);
+  left: 800px;
+  bottom: 0px;
+  filter: contrast(0.8) brightness(0.5);
 }
 
 /* Blocks */

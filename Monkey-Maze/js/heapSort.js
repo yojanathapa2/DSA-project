@@ -1,16 +1,15 @@
 async function Heapify(n, i, delay) {
-  
   var blocks = document.querySelectorAll(".block");
   var largest = i; // Initialize largest as root
   var l = 2 * i + 1;
   var r = 2 * i + 2;
-  
+
   // If left child is larger than root
   if (
     l < n &&
     Number(blocks[l].childNodes[0].innerHTML) >
-    Number(blocks[largest].childNodes[0].innerHTML)
-    )
+      Number(blocks[largest].childNodes[0].innerHTML)
+  )
     largest = l;
 
   // If right child is larger than largest so far
@@ -18,7 +17,7 @@ async function Heapify(n, i, delay) {
     r < n &&
     Number(blocks[r].childNodes[0].innerHTML) >
       Number(blocks[largest].childNodes[0].innerHTML)
-  ) 
+  )
     largest = r;
 
   // If largest is not root, swap and continue heapifying
@@ -58,8 +57,8 @@ async function HeapSort(n, delay) {
     blocks[0].style.height = temp1;
     blocks[i].childNodes[0].innerText = blocks[0].childNodes[0].innerText;
     blocks[0].childNodes[0].innerText = temp2;
-    blocks[i].style.backgroundColor = "green";
-    
+    blocks[i].style.backgroundColor = "#8B0000";
+
     await new Promise((resolve) =>
       setTimeout(() => {
         resolve();
@@ -69,7 +68,7 @@ async function HeapSort(n, delay) {
     // Call max Heapify on the reduced heap
     await Heapify(i, 0);
   }
-  blocks[i].style.backgroundColor = "green";
+  blocks[i].style.backgroundColor = "#8B0011";
 }
 
 let heapSortButton = document.getElementById("heapSortButton");

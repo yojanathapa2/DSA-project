@@ -1,5 +1,5 @@
 var jmp = new Howl({
-  src: "./sfx/jmp.mp3",
+  src: "./sfx/mov2.mp3",
   html5: true,
   volume: 0.6,
 });

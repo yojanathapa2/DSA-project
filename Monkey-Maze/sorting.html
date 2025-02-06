@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,34 +24,20 @@
 <>
   <div class="navbar">
     <h1 class="title">
-      <a href="index.html" style="text-decoration: none; color: #035f50">Hungry Hackee Hunts</a>
+      <a href="index.html" style="text-decoration: none; color:#8a3806">The Zombie Escape</a>
     </h1>
     <button class="nav-item" id="generate-array" onclick="generate(), generate_idx();">Generate New Array</button>
 
-      <div class="nav-item dropdown">
-        Sort
-        <i class="fas fa-caret-down" style="color: rgb(241, 172, 44)"></i>
-        <div class="dropdown-content algoButtons">
-          <button id="bubbleSortButton">Bubble Sort</button>
-          <button id="insertionSortButton">Insertion Sort</button>
-          <button id="selectionSortButton">Selection Sort</button>
-          <button id="shellSortButton">Shell Sort</button>
-          <button id="heapSortButton">Heap Sort</button>
-          <button id="quickSortButton">Quick Sort</button>
-        </div>
-      </div>
-
-      <div class="nav-item dropdown">
-        <i class="fas fa-lightbulb" style="color: rgb(241, 172, 44)"></i>
-        Hint to help Hackee get the Walnuts
-        <span class="nav-info dropdown-content hint" style="top: 25px">
-          <i class="fas fa-arrow-up" style="color: green"></i>
-          Use arrow-up key to make Hackee jump
-          <br />
-          <span style="color: green"
-            >&nbsp; &nbsp; Blocks must be sorted first!</span
-          >
-        </span>
+    <div class="nav-item dropdown">
+      Sort
+      <i class="fas fa-caret-down" style="color: rgb(241, 172, 44)"></i>
+      <div class="dropdown-content algoButtons">
+        <button id="bubbleSortButton">Bubble Sort</button>
+        <button id="insertionSortButton">Insertion Sort</button>
+        <button id="selectionSortButton">Selection Sort</button>
+        <button id="shellSortButton">Shell Sort</button>
+        <button id="heapSortButton">Heap Sort</button>
+        <button id="quickSortButton">Quick Sort</button>
       </div>
     </div>
 
@@ -68,7 +56,7 @@
 <div class="container">
       <div class="nav-item info arrayInput">
         Speed:
-        <input id="speed" type="range" min="1" max="5" step="1" value="2" />
+        <input id="speed" type="range" min="1" max="5" step="1" value="4" />
       </div>
       <div id="array"></div>
       <div id="count"></div>
@@ -76,7 +64,13 @@
       <h2 class="range" style="text-align: center"></h2>
 
       <div class="tree">
-        <img src="img/tree.png" alt="" width="430px" height="512px" />
+        <img
+          src="img/tree.png"
+          alt=""
+          width="430px
+        "
+          height="512px"
+        />
       </div>
       <div class="game">
         <img src="img/both.png" class="character" />

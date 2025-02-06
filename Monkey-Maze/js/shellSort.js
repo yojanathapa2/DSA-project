@@ -27,8 +27,9 @@ async function ShellSort(delay) {
         bars[k].style.height = bars[k - i].style.height;
         bars[k].childNodes[0].innerText = bars[k - i].childNodes[0].innerText;
 
-        document.getElementsByClassName("range")[0].innerText = `[${k},${k-i}]`;
-
+        document.getElementsByClassName("range")[0].innerText = `[${k},${
+          k - i
+        }]`;
 
         // To pause the execution of code
         // for 300 milliseconds
@@ -40,10 +41,10 @@ async function ShellSort(delay) {
       }
 
       // Provide darkblue color to the jth bar
-      bars[j].style.backgroundColor = "red";
+      bars[j].style.backgroundColor = "#4B0082";
 
       // Provide darkblue color to the kth bar
-      bars[k].style.backgroundColor = "red";
+      bars[k].style.backgroundColor = "#000000";
       bars[k].style.height = temp1;
       bars[k].childNodes[0].innerText = temp2;
 
@@ -56,10 +57,10 @@ async function ShellSort(delay) {
       );
 
       // Provide color to the jth bar
-      bars[j].style.backgroundColor = "pink";
+      bars[j].style.backgroundColor = "#5A5A5A";
 
       // Provide color to the kth bar
-      bars[k].style.backgroundColor = "pink";
+      bars[k].style.backgroundColor = "#5A5A5A";
 
       // To pause the execution of code for
       // 300 milliseconds
@@ -71,7 +72,7 @@ async function ShellSort(delay) {
     }
   }
   for (var x = 0; x < 15; x++) {
-    bars[x].style.backgroundColor = "green";
+    bars[x].style.backgroundColor = "#013220";
   }
 }
 

@@ -7,8 +7,8 @@ async function BubbleSort(l, r, delay) {
     for (var j = 0; j < 15 - i - 1; j++) {
       // To change background-color of the
       // blocks to be compared
-      blocks[j].style.backgroundColor = "red";
-      blocks[j + 1].style.backgroundColor = "yellow";
+      blocks[j].style.backgroundColor = "#8B0000";
+      blocks[j + 1].style.backgroundColor = "FF4500";
 
       // To wait for .1 sec
       await new Promise((resolve) =>
@@ -30,12 +30,12 @@ async function BubbleSort(l, r, delay) {
       }
 
       // Changing the color to the previous one
-      blocks[j].style.backgroundColor = "rgb(61,163,93)";
-      blocks[j + 1].style.backgroundColor = "rgb(61,163,93)";
+      blocks[j].style.backgroundColor = "#5C1E1E";
+      blocks[j + 1].style.backgroundColor = "#5C1E1E";
     }
 
     //changing the color of greatest element
-    blocks[blocks.length - i - 1].style.backgroundColor = "green";
+    blocks[blocks.length - i - 1].style.backgroundColor = "#7B1113";
   }
 }
 
