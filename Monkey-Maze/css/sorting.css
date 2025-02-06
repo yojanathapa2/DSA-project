@@ -158,7 +158,7 @@ body {
   position: absolute;
   left: 800px;
   bottom: 0px;
-  filter: contrast(0.8) brightness(0.5);
+  filter: contrast(0.9) brightness(0.9);
 }
 
 /* Blocks */
