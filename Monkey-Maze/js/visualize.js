@@ -1,4 +1,4 @@
-let delay = 10;
+let delay = 100;
 
 let inputSpeed =document.getElementById("speed");
 

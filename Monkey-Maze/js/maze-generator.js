@@ -50,6 +50,7 @@ function mazeGenerator() {
   } else {
     clearInterval(drawLoop);
     play = true;
+    current = grid[0];
     cellElements[current.r * ncols + current.c].style.background =
       "hsl(0, 100%, 5%)";
     cellElements[goal.r * ncols + goal.c].innerHTML = sortingHat;

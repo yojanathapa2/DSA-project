@@ -7,7 +7,7 @@ for (let i = 255; i <= 3825; i = i + 255) {
   array.push(i);
 }
 
-function shuffle(array) {
+function shuffle(array) {  
   let currentIndex = array.length,
     randomIndex;
 
